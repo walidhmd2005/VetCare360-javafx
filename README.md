@@ -1,0 +1,3 @@
+
+-javafx
+-xml
