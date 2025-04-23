@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.vetcare360.controller.MainController"
+            prefHeight="600.0" prefWidth="800.0">
+    <top>
+        <MenuBar>
+            <Menu text="Navigation">
+                <MenuItem text="Home" onAction="#showHome"/>
+                <MenuItem text="Veterinarians" onAction="#showVets"/>
+                <MenuItem text="Find Owners" onAction="#showOwnerSearch"/>
+            </Menu>
+            <Menu text="Help">
+                <MenuItem text="About" onAction="#showAbout"/>
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <!-- This is where the content will be loaded -->
+        <BorderPane fx:id="contentPane" />
+    </center>
+</BorderPane>
